@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies | Lo mejor del cine y entretenimiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="fixed z-20 top-0 left-0 w-full bg-zinc-900/50">
+        <nav class="py-4">
+            <div class="container px-4 mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <a href="#hero"
+                        class="text-2xl font-black flex items-center gap-1 transition-colors hover:text-orange-400">
+                        Movies
+                        <img src="./IMG/anaconda.png" alt="anaconda">
+                    </a>
+                    <ul class="fixed top-0 right-0 bottom-0 left-0 bg-zinc-900/50 flex flex-col place-items-center place-content-center gap-4 pointer-events-none opacity-0 transition-opacity md:static md:bg-inherit md:flex-row md:pointer-events-auto md:opacity-100 target:opacity-100 target:pointer-events-auto"
+                        id="headerMenu">
+                        <li>
+                            <a href="#" class="font-semibold transition-colors hover:text-orange-400">Movies</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-semibold transition-colors hover:text-orange-400">Series</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-semibold transition-colors hover:text-orange-400">Animes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2">
+                    <form
+                        class="fixed top-16 left-1/2 -translate-x-1/2 -translate-y-24 transition-transform target:translate-y-4 md:static md:transform-none md:target:transform-none"
+                        id="headerSearchEngine">
+                        <input type="search" placeholder="Nombre" class="py-1 px-4 rounded-2xl" />
+                    </form>
+                    <a href="#headerSearchEngine" class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </a>
+                    <img src="./IMG/el Chimichanga de la muerte sin bg recortado.png" alt="El Chimichanga de la muerte"
+                        width="66" height="37" class="w-10 h-10 rounded-full shadow shadow-current" />
+                    <a href="#headerMenu" class="md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="relative min-h-screen flex" id="hero">
+            <img src="./IMG/wp3128223.jpg" alt="Movies"
+                class="absolute -z-10 top-0 left-0 w-full h-full object-cover opacity-50 lg:h-auto" />
+            <div class="container px-4 mx-auto flex items-center translate-y-20">
+                <div class="flex flex-col gap-2 max-w-lg">
+                    <h1 class="text-5xl font-black">The Hobbit</h1>
+                    <h2 class="text-3xl font-bold">Un viaje inesperado</h2>
+                    <p>
+                        "The Hobbit" sigue las aventuras de Bilbo Bolsón, un hobbit que se une a un grupo de enanos y al
+                        mago Gandalf en una búsqueda para
+                        recuperar el reino de los enanos, Erebor, que ha sido tomado por el dragón Smaug. A lo largo de
+                        su viaje, Bilbo descubre su valentía
+                        interior y encuentra un anillo mágico. La película es una historia de auto-descubrimiento y
+                        valentía en un mundo de fantasía lleno de
+                        peligros y maravillas, estableciendo el escenario para los eventos de "El Señor de los Anillos".
+                    </p>
+                    <div>
+                        <span
+                            class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                            Warner Bros. / J. R. R. Tolkien
+                        </span>
+                        <span
+                            class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">
+                            Aventura/Fantasia
+                        </span>
+                        <span
+                            class="bg-pink-100 text-pink-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300">
+                            2012
+                        </span>
+                        <span
+                            class="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
+                            AMZN ⭐ 4.5
+                        </span>
+                    </div>
+                    <div class="flex gap-5 self-center">
+                        <a
+                            href="https://www.primevideo.com/detail/El-hobbit-un-viaje-inesperado/0ND8T6TTN9VCOQKCF07F2S69IV?_encoding=UTF8&language=es_ES" target="_blank">
+                            <button type="button"
+                                class="text-black bg-white hover:bg-gray-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-white  dark:hover:bg-black dark:hover:text-white focus:outline-none dark:focus:ring-red-700 flex items-center gap-1 transition-colors">
+                                Ver
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path
+                                        d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                </svg>
+                            </button>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=a3mELVgSHEc" target="_blank">
+                            <button type="button"
+                                class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-red-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 flex items-center gap-1 transition-colors">
+                                Trailer
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path
+                                        d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="absolute flex">
+            <img class="z-1 mt-[173px] ml-[50px] scale-50 opacity-75" src="./IMG/Orthanc-removebg-recorte  FINAL.png"
+                alt="Torre Blanca">
+
+        </div>
+        <div class="absolute flex">
+            <img class="z-1 mt-[156px] ml-[1270px] scale-75 opacity-70"
+                src="./IMG/Barad-Dur-removebg-recorte  FINAL.png" alt="Ojo">
+        </div>
+
+        <!--Aqui empieza el carrusel-->
+        <div class="position-relative ">
+            <section class="px-12">
+                <div class="max-w-lg mx-auto relative">
+
+                    <input id="image-01" type="radio" name="slider" class="sr-only peer/01">
+                    <input id="image-02" type="radio" name="slider" class="sr-only peer/02">
+                    <input id="image-03" type="radio" name="slider" class="sr-only peer/03" checked>
+                    <input id="image-04" type="radio" name="slider" class="sr-only peer/04">
+                    <input id="image-05" type="radio" name="slider" class="sr-only peer/05">
+                    <!--IMAGEN 1-->
+                    <div class="
+                            absolute inset-0 scale-[51.25%] z-5 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]
+                            peer-focus-visible/01:[&_article]:ring
+                            peer-focus-visible/01:[&_article]:ring-indigo-300
+                            peer-checked/01:relative
+                            peer-checked/01:z-50
+                            peer-checked/01:translate-x-0
+                            peer-checked/01:scale-100
+                            peer-checked/01:[&>label]:pointer-events-none
+
+                            peer-checked/02:-translate-x-20
+                            peer-checked/02:scale-[83.75%]
+                            peer-checked/02:z-40
+
+                            peer-checked/03:-translate-x-40
+                            peer-checked/03:scale-[67.5%]
+                            peer-checked/03:z-30
+
+                            peer-checked/04:-translate-x-60
+                            peer-checked/04:scale-[51.25%]
+                            peer-checked/04:z-20
+
+                            peer-checked/05:-translate-x-80
+                            peer-checked/05:scale-[35.00%]
+                            peer-checked/05:z-10
+                        ">
+                        <label class="absolute inset-0" for="image-01"><span class="sr-only"></span></label>
+                        <article class="max-h-96 bg-gray-900 rounded-lg shadow-2xl">
+                            <div class="bg-gray-900 border border-gray-200 p-10 rounded-lg">
+                                <div class="relative">
+                                    <img class="z-6 opacity-100 rounded-lg"
+                                        src="https://annotatedgilmoregirls.files.wordpress.com/2022/02/the-fellowship-of-the-ring.jpeg?w=1024"
+                                        alt="">
+                                </div>
+                                <header class="mb-1">
+
+                                    <h1 class=" text-xl font-bold text-white z-7">The Lord of the Rings</h1>
+                                </header>
+                                <div class="text-sm leading-relaxed text-white space-y-4 mb-1 z-7">
+                                    <h2>
+                                        The Fellowship of the Ring
+                                    </h2>
+                                    <p>
+                                        Sigue a Frodo y un grupo diverso en una misión épica para destruir un anillo
+                                        malévolo y evitar la caída de la
+                                        Tierra Media en manos de Sauron, mientras enfrentan peligros y desafíos.
+                                    </p>
+                                </div>
+
+                                <footer class="translate-x-80 translate-y-5">
+                                    <a
+                                        href="https://www.hbomax.com/pe/es/feature/urn:hbo:feature:GYG9OEApMzVPDfAEAAAAE" target="_blank">
+                                        <button type="button"
+                                            class="text-indigo-500 bg-white hover:bg-gray-900 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-white  dark:hover:bg-indigo-500 dark:hover:text-black focus:outline-none flex items-center gap-1 transition-colors">
+                                            Ver
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path
+                                                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                    <!--IMAGEN 2-->
+                    <div class="
+                            absolute inset-0 scale-[51.25%] z-5 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]
+                            peer-focus-visible/02:[&_article]:ring
+                            peer-focus-visible/02:[&_article]:ring-indigo-300                        
+                            peer-checked/01:translate-x-20
+                            peer-checked/01:scale-[83.75%]
+                            peer-checked/01:z-40
+
+                            peer-checked/02:relative
+                            peer-checked/02:z-50
+                            peer-checked/02:translate-x-0
+                            peer-checked/02:scale-100
+                            peer-checked/02:[&>label]:pointer-events-none
+
+                            peer-checked/03:-translate-x-20
+                            peer-checked/03:scale-[83.75%]
+                            peer-checked/03:z-40
+
+                            peer-checked/04:-translate-x-40
+                            peer-checked/04:scale-[67.5%]
+                            peer-checked/04:z-30
+
+                            peer-checked/05:-translate-x-60
+                            peer-checked/05:scale-[51.25%]
+                            peer-checked/05:z-20
+                        ">
+                        <label class="absolute inset-0" for="image-02"><span class="sr-only"></span></label>
+                        <article class="max-h-96 bg-gray-900 rounded-lg shadow-2xl">
+                            <div class="bg-gray-900 border border-gray-200 p-10 rounded-lg">
+                                <div class="relative">
+                                    <img class="z-6 opacity-100 rounded-lg"
+                                        src="./IMG/The Lord of the Rings The Two Towers.jpg" alt="">
+                                </div>
+                                <header class="mb-1">
+
+                                    <h1 class=" text-xl font-bold text-white z-7">The Lord of the Rings</h1>
+                                </header>
+                                <div class="text-sm leading-relaxed text-white space-y-4 mb-1 z-7">
+                                    <h2>
+                                        The Two Towers
+                                    </h2>
+                                    <p>
+                                        Se separa la comunidad del anillo. Frodo y Sam avanzan hacia Mordor, mientras,
+                                        Aragorn, Legolas
+                                        y Gimli buscan a Merry y Pippin, para unirse a la defensa de Helm's Deep contra
+                                        Saruman.
+                                    </p>
+                                </div>
+
+                                <footer class="translate-x-80 translate-y-5">
+                                    <a
+                                        href="https://www.hbomax.com/pe/es/feature/urn:hbo:feature:GYG9OEAjyvFPDfAEAAAAD" target="_blank">
+                                        <button type="button"
+                                            class="text-indigo-500 bg-white hover:bg-gray-900 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-white  dark:hover:bg-indigo-500 dark:hover:text-black focus:outline-none flex items-center gap-1 transition-colors">
+                                            Ver
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path
+                                                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                    <!--IMAGEN 3-->
+                    <div class="
+                            absolute inset-0 scale-[51.25%] z-5 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]
+                            peer-focus-visible/03:[&_article]:ring
+                            peer-focus-visible/03:[&_article]:ring-indigo-300                          
+                            peer-checked/01:translate-x-40
+                            peer-checked/01:scale-[67.5%]
+                            peer-checked/01:z-30
+
+                            peer-checked/02:translate-x-20
+                            peer-checked/02:scale-[83.75%]
+                            peer-checked/02:z-40
+
+                            peer-checked/03:relative
+                            peer-checked/03:z-50
+                            peer-checked/03:translate-x-0
+                            peer-checked/03:scale-100
+                            peer-checked/03:[&>label]:pointer-events-none
+
+                            peer-checked/04:-translate-x-20
+                            peer-checked/04:scale-[83.75%]
+                            peer-checked/04:z-40
+
+                            peer-checked/05:-translate-x-40
+                            peer-checked/05:scale-[67.5%]
+                            peer-checked/05:z-30                  
+                        ">
+                        <label class="absolute inset-0" for="image-03"><span class="sr-only"></span></label>
+                        <article class="max-h-96 bg-gray-900 rounded-lg shadow-2xl">
+                            <div class="bg-gray-900 border border-gray-200 p-10 rounded-lg">
+                                <div class="relative">
+                                    <img class="z-6 opacity-100 rounded-lg"
+                                        src="./IMG/The Lord of the Rings The Return of the King.jpg" alt="">
+                                </div>
+                                <header class="mb-1">
+
+                                    <h1 class=" text-xl font-bold text-white z-7">The Lord of the Rings</h1>
+                                </header>
+                                <div class="text-sm leading-relaxed text-white space-y-4 mb-1 z-7">
+                                    <h2>
+                                        The Return of the King
+                                    </h2>
+                                    <p>
+                                        "The Return of the King" concluye la trilogía mientras Frodo y Sam se acercan a
+                                        la destrucción del
+                                        Anillo Único, y Aragorn lidera una épica batalla para liberar Gondor y restaurar
+                                        la paz en la Tierra Media.
+                                    </p>
+                                </div>
+
+                                <footer class="translate-x-80 translate-y-5">
+                                    <a
+                                        href="https://www.hbomax.com/pe/es/feature/urn:hbo:feature:GYCwLmAtfyLDDGgEAAAAJ?countryRedirect=1" target="_blank">
+                                        <button type="button"
+                                            class="text-indigo-500 bg-white hover:bg-gray-900 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-white  dark:hover:bg-indigo-500 dark:hover:text-black focus:outline-none flex items-center gap-1 transition-colors">
+                                            Ver
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path
+                                                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                    <!--IMAGEN 4-->
+                    <div class="
+                            absolute inset-0 scale-[51.25%] z-5 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]
+                            peer-focus-visible/04:[&_article]:ring
+                            peer-focus-visible/04:[&_article]:ring-indigo-300                          
+                
+                            peer-checked/01:translate-x-60
+                            peer-checked/01:scale-[51.25%]
+                            peer-checked/01:z-20
+                            
+                            peer-checked/02:translate-x-40
+                            peer-checked/02:scale-[67.5%]
+                            peer-checked/02:z-30
+                            
+                            peer-checked/03:translate-x-20
+                            peer-checked/03:scale-[83.75%]
+                            peer-checked/03:z-40
+                
+                            peer-checked/04:relative
+                            peer-checked/04:z-50
+                            peer-checked/04:translate-x-0
+                            peer-checked/04:scale-100
+                            peer-checked/04:[&>label]:pointer-events-none
+                            
+                            peer-checked/05:-translate-x-20
+                            peer-checked/05:scale-[83.75%]
+                            peer-checked/05:z-40
+                        ">
+                        <label class="absolute inset-0" for="image-04"><span class="sr-only"></span></label>
+                        <article class="max-h-96 bg-gray-900 rounded-lg shadow-2xl">
+                            <div class="bg-gray-900 border border-gray-200 p-10 rounded-lg">
+                                <div class="relative">
+                                    <img class="z-6 opacity-100 rounded-lg"
+                                        src="./IMG/The Hobbit The Desolation of Smaug.jpg" alt="">
+                                </div>
+                                <header class="mb-1">
+
+                                    <h1 class=" text-xl font-bold text-white z-7">The Hobbit</h1>
+                                </header>
+                                <div class="text-sm leading-relaxed text-white space-y-4 mb-1 z-7">
+                                    <h2>
+                                        The Desolation of Smaug
+                                    </h2>
+                                    <p>
+                                        "The Desolation of Smaug" sigue a Bilbo, los enanos y Gandalf en su viaje hacia
+                                        Erebor, enfrentando peligros
+                                        y finalmente confrontando al dragón Smaug en una emocionante búsqueda para
+                                        recuperar su reino.
+                                    </p>
+                                </div>
+
+                                <footer class="translate-x-80 translate-y-5">
+                                    <a href="https://www.primevideo.com/detail/The-Hobbit-The-Desolation-of-Smaug-Extended-Edition/0OO678BUAD8PBONJB0PR5ASEK4/ref=atv_nb_lcl_es_ES?language=es_ES&ie=UTF8" target="_blank">
+                                        <button type="button"
+                                            class="text-indigo-500 bg-white hover:bg-gray-900 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-white  dark:hover:bg-indigo-500 dark:hover:text-black focus:outline-none flex items-center gap-1 transition-colors">
+                                            Ver
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path
+                                                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                    <!--IMAGEN 5-->
+                    <div class="
+                            absolute inset-0 scale-[51.25%] z-5 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]
+                            peer-focus-visible/05:[&_article]:ring
+                            peer-focus-visible/05:[&_article]:ring-indigo-300                          
+                            peer-checked/01:translate-x-80
+                            peer-checked/01:scale-[35.00%]
+                            peer-checked/01:z-10
+
+                            peer-checked/02:translate-x-60
+                            peer-checked/02:scale-[51.25%]
+                            peer-checked/02:z-20
+
+                            peer-checked/03:translate-x-40
+                            peer-checked/03:scale-[67.5%]
+                            peer-checked/03:z-30
+
+                            peer-checked/04:translate-x-20
+                            peer-checked/04:scale-[83.75%]
+                            peer-checked/04:z-40
+
+                            peer-checked/05:relative
+                            peer-checked/05:z-50
+                            peer-checked/05:translate-x-0
+                            peer-checked/05:scale-100
+                            peer-checked/05:[&>label]:pointer-events-none
+                        ">
+                        <label class="absolute inset-0" for="image-05"><span class="sr-only"></span></label>
+                        <article class="max-h-96 bg-gray-900 rounded-lg shadow-2xl">
+                            <div class="bg-gray-900 border border-gray-200 p-10 rounded-lg">
+                                <div class="relative">
+                                    <img class="z-6 opacity-100 rounded-lg"
+                                        src="./IMG/The Hobbit The Battle of the Five Armies.jpg" alt="">
+                                </div>
+                                <header class="mb-1">
+
+                                    <h1 class=" text-xl font-bold text-white z-7">The Hobbit</h1>
+                                </header>
+                                <div class="text-sm leading-relaxed text-white space-y-4 mb-1 z-7">
+                                    <h2>
+                                        The Battle of the Five Armies
+                                    </h2>
+                                    <p>
+                                        "The Battle of the Five Armies" relata la culminación de la aventura de Bilbo y
+                                        los enanos, cuando una épica
+                                        batalla se desata por el control de Erebor, involucrando elfos, enanos, humanos,
+                                        orcos y... mas enanos.
+                                    </p>
+                                </div>
+
+                                <footer class="translate-x-80 translate-y-5">
+                                    <a href="https://www.primevideo.com/detail/El-Hobbit-La-Batalla-de-los-Cinco-Ej%C3%A9rcitos/0N0G7DN7WIDWS1MI0EOXOPH8TY?_encoding=UTF8&language=es_ES" target="_blank">
+                                        <button type="button"
+                                            class="text-indigo-500 bg-white hover:bg-gray-900 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2 dark:bg-white  dark:hover:bg-indigo-500 dark:hover:text-black focus:outline-none flex items-center gap-1 transition-colors">
+                                            Ver
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                fill="currentColor" class="w-5 h-5">
+                                                <path
+                                                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer class="bg-white dark:bg-gray-900">
+            <div class="m-10 mb-0 max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+                <div class="lg:flex lg:items-start lg:gap-20">
+                    <div class="text-teal-600 dark:text-teal-300">
+                        <div>
+                            <img class="ml-10 scale-75"
+                                src="./IMG/desktop-wallpaper-the-one-ring-removebg-preview (1) (1).png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="ml-10 mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+                        <div class="col-span-2">
+                            <div>
+                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+                                    Informate de lo ultimo!
+                                </h2>
+
+                                <p class="mt-4 text-gray-500 dark:text-gray-400">
+                                    Registrate y enterate primero de todo lo nuevo en el mundo del cine.
+                                    Demuestra tu fanatismo y devocion al cine!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
+                            <form class="w-full">
+                                <label for="UserEmail" class="sr-only"> Email </label>
+
+                                <div
+                                    class="border border-gray-100 p-2 focus-within:ring dark:border-gray-800 sm:flex sm:items-center sm:gap-4">
+                                    <input type="email" id="UserEmail" placeholder="pythonmovies@movies.com"
+                                        class="w-full border-none focus:border-transparent focus:ring-transparent dark:bg-gray-900 dark:text-white sm:text-sm" />
+
+                                    <button
+                                        class="mt-1 w-full bg-indigo-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-indigo-500 sm:mt-0 sm:w-auto sm:shrink-0">
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                            <p class="font-medium text-gray-900 dark:text-white">Servicios</p>
+
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Boleteria en Linea
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Catálogo en Linea
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Mi Cuenta
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Proyectos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        LIBRO DE RECLAMACIONES
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                            <p class="font-medium text-gray-900 dark:text-white">Nosotros</p>
+
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        About
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Conoce al equipo
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Trabaja con Nosotros
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                            <p class="font-medium text-gray-900 dark:text-white">Links de Apoyo</p>
+
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Contáctanos
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        FAQs
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Chat en Vivo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                            <p class="font-medium text-gray-900 dark:text-white">Políticas</p>
+
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Política de Sostenibilidad
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Política de SST
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Política de Reembolso
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Política de Diversidad e Inclusión
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-span-2 sm:col-span-1">
+                            <p class="font-medium text-gray-900 dark:text-white">Descargas</p>
+
+                            <ul class="mt-6 space-y-4 text-sm">
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Calendario de Películas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                        Wallpapers de Películas
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                    <span class="sr-only">Facebook</span>
+
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                    <span class="sr-only">Instagram</span>
+
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                    <span class="sr-only">Twitter</span>
+
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                    <span class="sr-only">GitHub</span>
+
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/" rel="noreferrer" target="_blank"
+                                    class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                                    <span class="sr-only">Dribbble</span>
+
+
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 30 30" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" x="0px" y="0px">
+                                        <path
+                                            d="M 8.78125 4 L 10.4375 9.4375 L 10.4375 12.96875 L 11.8125 12.96875 L 11.8125 9.25 L 13.4375 4 L 12.03125 4 L 11.15625 7.59375 L 11.09375 7.59375 L 10.1875 4 Z M 15.21875 6.1875 C 14.660156 6.1875 14.207031 6.351563 13.875 6.65625 C 13.542969 6.957031 13.375 7.363281 13.375 7.875 L 13.375 11.3125 C 13.375 11.875 13.550781 12.324219 13.875 12.65625 C 14.199219 12.988281 14.617188 13.15625 15.15625 13.15625 C 15.714844 13.15625 16.148438 12.976563 16.46875 12.65625 C 16.785156 12.332031 16.9375 11.910156 16.9375 11.34375 L 16.9375 7.90625 C 16.9375 7.402344 16.792969 6.976563 16.46875 6.65625 C 16.144531 6.335938 15.730469 6.1875 15.21875 6.1875 Z M 18 6.34375 L 18 11.90625 C 18 12.304688 18.074219 12.585938 18.21875 12.78125 C 18.363281 12.976563 18.589844 13.0625 18.875 13.0625 C 19.105469 13.0625 19.320313 13.015625 19.5625 12.875 C 19.808594 12.734375 20.054688 12.519531 20.28125 12.25 L 20.28125 12.96875 L 21.5 12.96875 L 21.5 6.34375 L 20.28125 6.34375 L 20.28125 11.375 C 20.167969 11.519531 20.046875 11.65625 19.90625 11.75 C 19.769531 11.84375 19.652344 11.875 19.5625 11.875 C 19.449219 11.875 19.363281 11.851563 19.3125 11.78125 C 19.257813 11.710938 19.21875 11.589844 19.21875 11.4375 L 19.21875 6.34375 Z M 15.15625 7.34375 C 15.320313 7.34375 15.464844 7.378906 15.5625 7.46875 C 15.664063 7.558594 15.6875 7.667969 15.6875 7.8125 L 15.6875 11.4375 C 15.6875 11.617188 15.660156 11.746094 15.5625 11.84375 C 15.460938 11.945313 15.324219 12 15.15625 12 C 14.996094 12 14.867188 11.941406 14.78125 11.84375 C 14.691406 11.742188 14.65625 11.617188 14.65625 11.4375 C 14.65625 11.4375 14.65625 7.8125 14.65625 7.8125 C 14.65625 7.667969 14.6875 7.558594 14.78125 7.46875 C 14.875 7.378906 15.003906 7.34375 15.15625 7.34375 Z M 15 14.53125 C 12.625 14.527344 10.308594 14.558594 8.03125 14.65625 C 6.441406 14.65625 5.125 15.957031 5.125 17.53125 C 5.03125 18.777344 4.996094 20.03125 5 21.28125 C 4.996094 22.527344 5.027344 23.75 5.125 25 C 5.125 26.578125 6.4375 27.875 8.03125 27.875 C 10.308594 27.96875 12.625 28.003906 15 28 C 17.378906 28.003906 19.695313 27.96875 21.96875 27.875 C 23.5625 27.875 24.875 26.578125 24.875 25 C 24.96875 23.75 25.003906 22.527344 25 21.28125 C 25.003906 20.03125 24.972656 18.777344 24.875 17.53125 C 24.875 15.957031 23.5625 14.65625 21.96875 14.65625 C 19.695313 14.5625 17.378906 14.527344 15 14.53125 Z M 6.5625 16.59375 L 10.75 16.59375 C 10.824219 16.59375 10.875 16.644531 10.875 16.71875 L 10.875 18 C 10.875 18.074219 10.824219 18.125 10.75 18.125 L 9.46875 18.125 L 9.46875 25.5625 C 9.46875 25.636719 9.417969 25.6875 9.34375 25.6875 L 7.96875 25.6875 C 7.894531 25.6875 7.8125 25.636719 7.8125 25.5625 L 7.8125 18.125 L 6.5625 18.125 C 6.488281 18.125 6.40625 18.074219 6.40625 18 L 6.40625 16.71875 C 6.40625 16.644531 6.488281 16.59375 6.5625 16.59375 Z M 15.375 16.59375 L 16.59375 16.59375 C 16.667969 16.59375 16.75 16.644531 16.75 16.71875 L 16.75 19.21875 C 16.851563 19.125 16.953125 19.0625 17.0625 19 C 17.269531 18.886719 17.476563 18.8125 17.6875 18.8125 C 18.117188 18.8125 18.425781 18.964844 18.65625 19.28125 C 18.875 19.585938 19 20.035156 19 20.59375 L 19 24.21875 C 19 24.714844 18.898438 25.105469 18.6875 25.375 C 18.46875 25.65625 18.152344 25.78125 17.75 25.78125 C 17.496094 25.78125 17.269531 25.730469 17.0625 25.625 C 16.953125 25.566406 16.851563 25.496094 16.75 25.40625 L 16.75 25.5625 C 16.75 25.636719 16.667969 25.6875 16.59375 25.6875 L 15.375 25.6875 C 15.300781 25.6875 15.25 25.636719 15.25 25.5625 L 15.25 16.71875 C 15.25 16.644531 15.300781 16.59375 15.375 16.59375 Z M 21.625 18.71875 C 22.21875 18.71875 22.675781 18.921875 23 19.28125 C 23.320313 19.636719 23.5 20.128906 23.5 20.78125 L 23.5 22.46875 C 23.5 22.542969 23.417969 22.59375 23.34375 22.59375 L 21.15625 22.59375 L 21.15625 23.6875 C 21.15625 24.085938 21.207031 24.238281 21.25 24.3125 C 21.285156 24.371094 21.371094 24.46875 21.5625 24.46875 C 21.714844 24.46875 21.820313 24.417969 21.875 24.34375 C 21.902344 24.304688 21.96875 24.164063 21.96875 23.6875 L 21.96875 23.21875 C 21.96875 23.144531 22.019531 23.09375 22.09375 23.09375 L 23.34375 23.09375 C 23.417969 23.09375 23.46875 23.144531 23.46875 23.21875 L 23.46875 23.71875 C 23.46875 24.421875 23.324219 24.949219 23 25.3125 C 22.671875 25.679688 22.175781 25.875 21.53125 25.875 C 20.949219 25.875 20.460938 25.671875 20.125 25.28125 C 19.792969 24.898438 19.625 24.378906 19.625 23.71875 L 19.625 20.78125 C 19.625 20.179688 19.820313 19.695313 20.1875 19.3125 C 20.554688 18.929688 21.042969 18.71875 21.625 18.71875 Z M 10.71875 18.90625 L 11.9375 18.90625 C 12.011719 18.90625 12.09375 18.957031 12.09375 19.03125 L 12.09375 24.03125 C 12.09375 24.195313 12.105469 24.257813 12.125 24.28125 C 12.132813 24.292969 12.148438 24.34375 12.25 24.34375 C 12.285156 24.34375 12.386719 24.316406 12.53125 24.21875 C 12.648438 24.140625 12.75 24.050781 12.84375 23.9375 L 12.84375 19.03125 C 12.84375 18.957031 12.894531 18.90625 12.96875 18.90625 L 14.1875 18.90625 C 14.261719 18.90625 14.3125 18.957031 14.3125 19.03125 L 14.3125 25.5625 L 14.34375 25.5625 C 14.34375 25.636719 14.261719 25.6875 14.1875 25.6875 L 12.96875 25.6875 C 12.894531 25.6875 12.84375 25.636719 12.84375 25.5625 L 12.84375 25.1875 C 12.683594 25.34375 12.511719 25.46875 12.34375 25.5625 C 12.078125 25.714844 11.820313 25.78125 11.5625 25.78125 C 11.238281 25.78125 11.011719 25.667969 10.84375 25.4375 C 10.683594 25.21875 10.59375 24.914063 10.59375 24.5 L 10.59375 19.03125 C 10.59375 18.957031 10.644531 18.90625 10.71875 18.90625 Z M 17.1875 20.125 C 17.105469 20.109375 17.007813 20.136719 16.90625 20.1875 C 16.847656 20.214844 16.808594 20.253906 16.75 20.3125 L 16.75 24.28125 C 16.824219 24.355469 16.871094 24.402344 16.9375 24.4375 C 17.011719 24.472656 17.105469 24.46875 17.1875 24.46875 C 17.34375 24.46875 17.390625 24.425781 17.40625 24.40625 C 17.445313 24.359375 17.46875 24.25 17.46875 24.03125 L 17.46875 20.65625 C 17.46875 20.46875 17.441406 20.339844 17.375 20.25 C 17.332031 20.191406 17.269531 20.140625 17.1875 20.125 Z M 21.5625 20.15625 C 21.417969 20.15625 21.308594 20.199219 21.25 20.28125 C 21.207031 20.339844 21.15625 20.476563 21.15625 20.78125 L 21.15625 21.3125 L 21.96875 21.3125 L 21.96875 20.78125 C 21.96875 20.480469 21.890625 20.347656 21.84375 20.28125 C 21.789063 20.203125 21.703125 20.15625 21.5625 20.15625 Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ml-72 mt-8 border-t border-indigo-500 pt-8 dark:border-indigo-500">
+                    <div class="sm:flex sm:justify-between">
+                        <p class="text-xs text-gray-500 dark:text-gray-400">
+                            &copy; 2023. Python Movies. All rights reserved.
+                        </p>
+
+                        <ul class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
+                            <li>
+                                <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+                                    Cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>
